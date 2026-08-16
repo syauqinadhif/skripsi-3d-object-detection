@@ -1,0 +1,56 @@
+# ── Repo pihak ketiga (clone sendiri, lihat README) ──
+OpenPCDet/
+CLOCs/
+CLOCs_LQS/
+CUDA-PointPillars/
+
+# ── Dataset (semua tidak di-push) ──
+dataset*/
+clocs_data/
+
+# ── Paket unggah/anotasi CVAT & arsip ──
+cvat_*/
+*.zip
+
+# ── Dokumen PDF (proposal, pedoman, naskah pihak lain) ──
+*.pdf
+
+# ── Backup ──
+*.bak
+*.bak_*
+*~
+
+# ── Keluaran training/inference besar ──
+output/
+models/
+deploy/demo100/
+deploy/results/
+deploy/**/demo_out/
+
+# ── Video ──
+videos_demo/
+videos_jetson/
+*.mp4
+*.webm
+*.mkv
+
+# ── Bobot & artefak besar (semua diabaikan; kecuali models_final/) ──
+*.pth
+*.pt
+*.onnx
+*.engine
+*.pkl
+*.bin
+*.pcd
+*.npz
+*.npy
+!models_final/**
+
+# ── Cache & sampah ──
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.DS_Store
+*.log
+scratchpad/
